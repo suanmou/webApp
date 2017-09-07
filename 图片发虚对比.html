@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+        }
+        /*div{
+				width: 375px;
+				width: 750px;
+				height: 100px;
+				background: green;
+			}*/
+        
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+			viewport里的宽度设置成device-width后
+				1、宽度不变，像素会变化
+					宽度是多少在移动端页面与pc端页面里是一致的，不会变化。但是像素会变化，一个像素会变成多个像素显示，变成的数量由像素比决定
+				2、设计图要根据设备像素（屏幕分辨率）去定大小，至少宽度要在750以上（一般会以750的宽为基准）
+				3、对于像素比为2以上的话，图片的尺寸是两倍，正好能够显示高清，但是对于像素比是1的话，图片的体积就过大了，会浪费很多流量，并且图片会自动压缩，效果还是会有一点差别（适配解决）
+		-->
+    <img src="images/375.jpg" />
+    <img src="images/750.jpg" />
+    <div></div>
+</body>
+
+</html>
