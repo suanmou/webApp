@@ -1,0 +1,296 @@
+body {
+    /*手机通用字体*/
+    font-family: helvetica, STHeiTi, Arial, sans-serif;
+    ;
+    margin: 0;
+}
+
+body * {
+    /*iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。text-size-adjust 设为 none 或者 100% 关闭字体大小自动调整功能*/
+    -webkit-text-size-adjust: 100%;
+    /* 禁止页面文字选择 ，此属性不继承，一般加在body上规定整个body的文字都不会自动调整*/
+    -webkit-user-select: none;
+}
+
+a,
+button,
+input {
+    /*透明度设置为0，去掉点击链接和文本框对象时默认的灰色半透明覆盖层(iOS)或者虚框(Android)*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button,
+select,
+input {
+    /*消除输入框和按钮的原生外观，在iOS上加上这个属性才能给按钮和输入框自定义样式，去除ios的圆角*/
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+    vertical-align: middle;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* 新浪使用方式
+.clearfix:after{ 
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+ }
+*/
+
+.clearfix {
+    /*兼容 IE*/
+    zoom: 1;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/*头部*/
+
+.ui-header {
+    width: 100%;
+    height: 1.55rem;
+    padding: 0.45rem 0;
+    font-size: 0.6rem;
+    background-color: #d52049;
+}
+
+.ui-header a {
+    display: block;
+    color: #fff;
+}
+
+.ui-header__location {
+    width: 5.55rem;
+    height: 1.55rem;
+    line-height: 1.55rem;
+    text-align: center;
+}
+
+.is-arrow_down {
+    display: inline-block;
+    width: 0.78333333rem;
+    height: 0.36666666rem;
+    background: url(../images/ico_01.png) no-repeat right center;
+    background-size: cover;
+}
+
+.ui-header__input {
+    width: 9.21666666rem;
+    height: 1.55rem;
+    border-radius: 0.433333333rem;
+    border: none;
+    box-sizing: border-box;
+    color: #dfc6ca;
+    text-indent: 1.73333333rem;
+    background: #ae3e56 url(../images/ico_02.png) no-repeat 0.43333333rem 0;
+    background-size: 1.03333333rem 1.55rem;
+}
+
+.ui-header__my {
+    width: 3.23333333rem;
+    height: 1.55rem;
+    line-height: 1.55rem;
+    text-align: center;
+}
+
+.ui-header__my span {
+    display: inline-block;
+    background: url(../images/ico_03.png) no-repeat 0 0.43333333rem;
+    background-size: 0.6rem 0.6rem;
+    padding-left: 0.75rem
+}
+
+.ui-content__banner a {
+    display: block;
+}
+
+.ui-content__banner img {
+    display: block;
+    width: 100%;
+    height: 6.333333rem;
+}
+
+.ui-content__nav ul {
+    padding-bottom: 1.166667rem;
+    font-size: 0;
+    text-align: center;
+    background: #f2f0f1;
+}
+
+.ui-content__nav ul li {
+    display: inline-block;
+    /* width: 1.76666666rem;
+    height: 1.76666666rem;*/
+    margin: 1rem 1rem 0 1rem;
+}
+
+.ui-content__nav li img {
+    display: block;
+    margin: 0 auto;
+    width: 1.76666666rem;
+    height: 1.76666666rem;
+}
+
+.ui-content__nav a {
+    display: inline-block;
+    font-size: 0.533333rem;
+    color: #545253;
+}
+
+.ui-content__adv1 {
+    width: 100%;
+    height: 6rem;
+    font-size: 0;
+}
+
+.ui-content__adv1 a {
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+}
+
+.ui-content__adv1 a img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.ui-content__adv2 {
+    display: block;
+    width: 100%;
+    height: 4.5rem;
+    padding: 0.5rem 0;
+    background-color: #f2f0f1;
+}
+
+.ui-content__adv2 a {
+    display: block;
+}
+
+.ui-content__adv2 img {
+    width: 100%;
+    height: 4.5rem;
+}
+
+.ui-content__productList__title {
+    height: 1.933333rem;
+    padding-left: 1.333333rem;
+    border-bottom: 1px solid #c2c1c6;
+    background: url(../images/ico_04.png) no-repeat 0.55rem center;
+    background-size: 0.16666666rem 0.83333333rem;
+    line-height: 1.933333rem;
+    font-size: 0.7666666rem;
+    color: #121212;
+}
+
+.ui-content__productList__item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #c2c1c6;
+}
+
+.ui-content__productList__itemPic,
+.ui-content__productList__itemDetail {
+    display: block;
+    float: left;
+}
+
+.ui-content__productList__itemPic {
+    width: 5.1rem;
+    height: 4.63333333rem;
+    padding-left: 0.5rem;
+    margin-right: 0.7rem;
+}
+
+.ui-content__productList__itemPic img {
+    width: 5.1rem;
+    height: 4.63333333rem;
+}
+
+.ui-content__productList__itemDetail {
+    width: 10.83333333rem;
+}
+
+.ui-content__productList__itemDetail h4 {
+    font-size: 0.833333rem;
+    line-height: 1.333333rem;
+    margin-bottom: 0.233333rem;
+}
+
+.ui-content__productList__itemDetail h4 a {
+    color: #181818;
+}
+
+.ui-content__productList__itemDetail p {
+    margin-bottom: 0.5rem;
+    font-size: 0.56666666rem;
+    line-height: 1.5;
+    color: #9e9e9e;
+}
+
+.ui-content__productList__itemTip {
+    font-size: 0.56666666rem;
+    line-height: 1.5;
+    color: #565656;
+}
+
+.ui-content__productList__itemTip strong {
+    color: #c00532;
+    padding: 0 0.2rem;
+}
+
+.is-discount {
+    display: inline-block;
+    width: 2rem;
+    height: 0.78333333rem;
+    background: url(../images/ico_05.png) no-repeat;
+    background-size: cover;
+    color: #fff;
+    box-sizing: border-box;
+    padding-left: 0.41666666rem;
+    margin-left: 0.13333333rem;
+}
+
+.red {
+    float: right;
+    background: url(../images/ico_06.png) no-repeat left;
+    background-size: 0.55rem 0.51666666rem;
+    padding-left: 0.66666666rem;
+}
