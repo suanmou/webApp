@@ -1,0 +1,176 @@
+.ui-header,
+.ui-content,
+.ui-footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.ui-header {
+	top: 0;
+	z-index: 940;
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	height: 2.933333rem;
+	background-color: #46ae01;
+}
+
+.ui-header__logo a {
+	display: block;
+	width: 8.666667rem;
+	height: 2.933333rem
+}
+
+.ui-header__logo a  img {
+	display: block;
+	width: 8.666667rem;
+	height: 2.933333rem
+}
+
+.ui-header__bar {
+	display: -webkit-flex;
+	-webkit-align-items: center;
+}
+
+.ui-header__bar a {
+	display: block;
+	margin: 0 0.5rem;
+}
+
+.ui-header__bar__searchBtn {
+	width: 1.333333rem;
+	height: 1.333333rem;
+	background: url(../images/ico_01.png) no-repeat;
+	background-size: cover;
+}
+
+.ui-header__bar__panelBtn {
+	width: 1.416667rem;
+	height: 1.333333rem;
+	background: url(../images/ico_02.png) no-repeat;
+	background-size:  cover;
+}
+
+.ui-content {
+	top: 2.933333rem;
+	bottom: 3.0rem;
+	overflow-y:auto; 
+	-webkit-overflow-scrolling:touch; 
+}
+.ui-content__nav {
+	width: 100%;
+	display: -webkit-flex;
+	-webkit-justify-content: space-around;
+}
+.ui-content__nav a{
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-align-items: center;
+	padding: 0.6rem 0;
+}
+
+.ui-content__nav a img {
+	width: 3.0rem;
+	height: 3.0rem;
+}
+.ui-content__nav a span {
+	font-size: 0.666667rem;
+	color: #666;
+	line-height: 2;
+
+}
+
+.ui-content__adv a{
+	display: block;
+}
+
+.ui-content__adv a img {
+	width: 100%;
+	height: 6.666667rem;
+}
+
+.ui-content__product {
+	background-color: #f5f5f5;
+}
+
+.ui-content__product__item {
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	padding: 0.33333333rem;
+}
+
+.ui-content__product__item img{
+	width: 7.5rem;
+	height: 10.66666666rem;
+}
+
+.ui-content__product__item a {
+	display: block;
+}
+
+.ui-content__product__itemColumn {
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-justify-content: space-between;
+	height: 10.66666666rem;
+}
+
+.ui-content__product__itemColumn  a img {
+	width: 9.5rem;
+	height: 5.16666666rem;
+}
+
+.ui-content__banner{
+	position: relative;
+	width: 100%;
+	height: 9rem;
+}
+
+.ui-content__banner__wrapper img{
+	width: 100%;
+	height: 100%;
+}
+
+.ui-content__banner__control {
+	position: absolute;
+	bottom: 0.55rem;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	width: 100%;
+}
+.ui-content__banner__control li {
+	width: 0.4rem;
+	height: 0.4rem;
+	background: #ddd;
+	border-radius: 50%;
+	margin: 0 0.15rem;
+}
+
+li.is-active {
+	background: #45b000;
+}
+
+.ui-footer {
+	bottom: 0;
+	z-index: 940;
+}
+
+.ui-footer__tab{
+	display: -webkit-flex;
+	-webkit-justify-content: space-around;
+	box-shadow: 0 -0.1rem 0.1rem #ddd;
+	width: 100%;
+	height: 3.0rem;
+	
+
+}
+
+.ui-footer__tab li a {
+	display: block;
+	
+}
+
+.ui-footer__tab li a img {
+	width: 2.666667rem;
+	height: 3.0rem;
+}
